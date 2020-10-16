@@ -1,0 +1,204 @@
+body#galleries {
+    position: relative
+}
+.background_about {
+    background: url(/images/banner_about.jpg) no-repeat center center;
+}
+.galleries_title {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 50px;
+}
+.galleries_container {
+    position: relative;
+    padding: 50px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+.galleries_container article {
+    padding: 5px 0px;
+    cursor: pointer;
+}
+.galleries_container article:hover h3 {
+    transform: rotate(-2deg);
+}
+.galleries_container article:hover h3 span {
+    transform: scale(1.05);
+}
+.galleries_container article:hover figure {
+    transform: translateY(-2px);
+}
+.galleries_container article:hover figure div{
+    opacity: 0.8;
+}
+.galleries_container figure {
+    margin: 0px;
+    padding: 0px 0px;
+    width: 100%;
+    position: relative;
+    transition: 0.5s;
+}
+/*.galleries_container figure:hover {
+    transform: translateY(-2px);
+}
+.galleries_container figure:hover div {
+   opacity: 0.8;
+}*/
+.galleries_container figure div {
+    top: 0;
+    left: 0;
+    background-color: #2d2d2d;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'JuliusOne';
+    font-size: 30px;
+    opacity: 0;
+    transition: 1.5s;
+}
+.galleries_container img {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+.galleries_container h3 {
+    padding-bottom: 20px;
+    font-size: 28px;
+    text-align: center;
+    position: relative;
+    transition: all .5s ease-out;
+}
+.galleries_container article h3 span {
+    transition: all .5s ease-out;
+}
+/*.galleries_container h3:after {
+    content: '';
+    position: absolute;
+    top: 33px;
+    height: 6px;
+    background-color: black;
+    width: 6px;
+    border-radius: 50%;
+    left: calc(50% - 3px);
+}*/
+.description {
+    padding-top: 50px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.description p:not(:last-child) {
+    padding-bottom: 5px;
+}
+.gallery_container {
+    padding: 50px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+.gallery_container figure {
+    cursor: pointer
+}
+.gallery_container figure:hover {
+    opacity: 0.8;
+}
+.not_found {
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.not_found p {
+    font-family: Montserrat;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.not_found p a {
+    color: red;
+}
+.fas {
+    animation: point_back 1s 3 ease-in-out;
+}
+@keyframes point_back {
+    0%  {transform: translateX(0);}
+    50% {transform: translateX(5px);}
+    100% {transform: translateX(0px);}
+
+}
+/* Light-Box CSS */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #2d2d2d;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousell {
+    width: 800px;
+    height: auto;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+.carousell .img_container {
+    width: 100%;
+    height:auto;
+    display: flex;
+    position: relative;
+    z-index: 0;
+}
+.img_container img {
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+.commands {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0; 
+    background-color: #2d2d2d;
+    z-index: 2;
+    transition: 0.5s;
+}
+.commands .fas {
+    animation: none;
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+    cursor: pointer;
+}
+.commands .fas:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+.carousell:hover .commands {
+    opacity: 0.4;
+}
+
+/* RESPONSIVE MOBILE (iPhone X) */
+
+@media only screen and (max-width: 375px) {
+
+    .galleries_container, .gallery_container {
+        grid-template-columns: 1fr;
+    }
+    h2.galleries_title {
+        font-size: 50px;
+    }
+
+}

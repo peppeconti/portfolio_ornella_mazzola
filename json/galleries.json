@@ -1,0 +1,29 @@
+{
+  "results": {
+      "females": {
+          "title": "Females, a Sicilian Story",
+          "cover": "images/galleries/females/females_1.jpg",
+          "description": "<p><i>Females</i> is a long-term project made up of fragments, intimate scenes, details, emotional discoveries, moments of calm or deepness, quiet and introspection. It’s a way to bridge the distance between photographer and subject, in silence, on tiptoes.</p><p>Not only do these images depict the power of these women, but also that of the medium of photography, and its ability to go beyond the surface and connect with unknown people. On the background there’s Sicily. Here it’s represented by interiors, curtains, laces, flowers, light, shadows, bridal veils, summer.</p>",
+          "photos": ["images/galleries/females/females_1.jpg", "images/galleries/females/females_2.jpg", "images/galleries/females/females_3.jpg", "images/galleries/females/females_4.jpg", "images/galleries/females/females_5.jpg", "images/galleries/females/females_6.jpg", "images/galleries/females/females_7.jpg", "images/galleries/females/females_8.jpg", "images/galleries/females/females_9.jpg"]
+      },
+      "the_sun_is_still_height": {
+        "title": "The Sun is still Height",
+        "cover": "images/galleries/sun/sun_1.jpg",
+        "description": "<p>Come si vive l'amore quando si raggiungono gli ottanta anni?</p><p>Durante questo \"viaggio\" mi imbatto in coppie innamorate più di prima che incastrano i nasi per dimostrarsi l'amore, donne che hanno deciso di sposarsi nella loro vita solo con se stesse, persone in cerca di una nuova compagna, acqua di colonia, fiori, balli latino americani, dolcezza, amarezza, separazioni, emozioni, seconde o terze possibilità. Ho scoperto che si sfiorisce solo quando non si crede più nella possibilità di essere felici e che anche ad ottanta anni il sole è ancora alto.</p>",
+        "photos": ["images/galleries/sun/sun_1.jpg", "images/galleries/sun/sun_2.jpg", "images/galleries/sun/sun_3.jpg", "images/galleries/sun/sun_4.jpg", "images/galleries/sun/sun_5.jpg", "images/galleries/sun/sun_6.jpg", "images/galleries/sun/sun_7.jpg", "images/galleries/sun/sun_8.jpg", "images/galleries/sun/sun_9.jpg"]
+
+    },
+      "palermo_dentro": {
+        "title": "Palermo dentro",
+        "cover": "images/galleries/palermo_dentro/palermo_1.jpg",
+        "description": "<p>Il progetto \"Palermo dentro\" è una raccolta di fotografie dei quartieri più popolari del centro storico della città: <i>Kalsa</i>, <i>Albergheria</i>, <i>Borgo vecchio</i>, <i>Vucciria</i>, <i>Ballarò</i>, <i>La Marina</i> e alcune zone più periferiche di Palermo.</p>",
+        "photos": ["images/galleries/palermo_dentro/palermo_1.jpg", "images/galleries/palermo_dentro/palermo_2.jpg", "images/galleries/palermo_dentro/palermo_3.jpg", "images/galleries/palermo_dentro/palermo_4.jpg", "images/galleries/palermo_dentro/palermo_5.jpg", "images/galleries/palermo_dentro/palermo_6.jpg", "images/galleries/palermo_dentro/palermo_7.jpg", "images/galleries/palermo_dentro/palermo_8.jpg"]
+      },
+      "notte_dei_defunti": {
+        "title": "La notte dei defunti",
+        "cover": "images/galleries/notte_defunti/notte_defunti_1.jpg",
+        "description": "<p>Capaci 2018, Un piccolo album che riassume la notte dell'1 Novembre. Anime di defunti di ogni genere, epoca, strato sociale, (gli abitanti stessi di Capaci) hanno attraversato in un corteo surreale le vie del centro storico di Capaci. \"I Morti\" sono una festività molto sentita in Sicilia. Nella nostra tradizione le anime dei morti l'1 Novembre attraversano le vie dei nostri paesi, per portare doni ai bambini e per far sentire viva la loro presenza.</p>",
+        "photos": ["images/galleries/notte_defunti/notte_defunti_1.jpg", "images/galleries/notte_defunti/notte_defunti_2.jpg", "images/galleries/notte_defunti/notte_defunti_3.jpg", "images/galleries/notte_defunti/notte_defunti_4.jpg", "images/galleries/notte_defunti/notte_defunti_5.jpg", "images/galleries/notte_defunti/notte_defunti_6.jpg"]
+      }
+   }
+}

@@ -1,0 +1,292 @@
+/** Page About **/
+
+header.small {
+    height: 35vh;
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(56, 1fr);
+    grid-template-rows: repeat(17, 1fr);
+    z-index: 99;
+}
+.background_about {
+    grid-column-start: 1;
+    grid-column-end: 57;
+    grid-row-start: 1;
+    grid-row-end: 18;
+    background: url(/images/banner_about.jpg) no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+#social_about {
+    grid-column-start: 1;
+    grid-column-end: 57;
+    grid-row-start: 5;
+    grid-row-end: 18;
+    background-color: transparent;
+    z-index: 4; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: calc(35vh + 45px);
+}
+#social_about li {
+    margin-left: 30px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+#social_about li:not(:last-child) {
+    margin-bottom: 20px;
+}
+#button_menu {
+    position: fixed;
+}
+.nav_two {
+    width: 100%;
+    background-color: #1B1918;
+    z-index: 8;
+    opacity: 0.8;
+    display: flex;
+    transition: opacity 0.3s;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    height: 10vh;
+}
+.nav_two div {
+    border-color: white;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.nav_two ul {
+    display: flex;
+}
+.nav_two ul li a {
+    color: white;
+    background-image: linear-gradient(white, white);
+    font-size: 18px;
+}
+.nav_two ul li a:hover {
+    background-size: 100% 2px, auto;
+}
+.nav_two ul li {
+    padding: 0px;
+    margin: auto 30px;
+}
+.nav_two ul .ellisse {
+    background-color: white;
+}
+.logo img {
+    width: auto;
+    height: 8vh;
+    margin: 0px 30px;
+    display: block;
+}
+.section_no_home {
+    padding-top: 45px;
+}
+.routing span{
+    font-family: Dancing;
+    font-size: 30px;
+}
+.routing {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 45px;
+}
+.routing a:hover {
+    background-size: 100% 2px, auto;
+}
+.arrows p:hover {
+    animation: bounce 0.4s ease;
+}
+
+.ellisse {
+    height: 15px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+#app {
+    padding: 45px 0px;
+}
+.about_foto_title {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 45px;
+}
+.about_foto_title div {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+ }
+.about_foto_title h2 {
+   text-align: center;
+   font-size: 45px;
+}
+figure.round {
+    width: 35%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.small_decoration {
+    width: 65%;
+    margin: 0px auto;
+    display: block;
+}
+.about_text p:not(.no_margin_bottom) {
+    margin-bottom: 20px;
+}
+.arrows {
+    padding-top: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+.arrows p {
+    font-family: Dancing;
+    font-size: 30px;
+    margin: 0px -40px;
+}
+.arrows p span {
+   padding: 0px 20px;
+   font-size: 24px;
+}
+.fade_in {
+    animation: fade_in 0.5s 1 ease-in-out;
+}
+@-webkit-keyframes fade_in {
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(0%);}
+}
+@-moz-keyframes fade_in {
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(0%);}
+}
+@-o-keyframes fade_in {
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(0%);}
+}
+@keyframes fade_in {
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(0%);}
+}
+.rolling {
+    animation: roll 1.5s 1 ease-out;
+    transform-origin: center;
+}
+@-webkit-keyframes roll {
+    0% {transform: translateX(-200%) rotate(-360deg) scale(0); opacity: 0;}
+    50% {transform: translateX(-200%) rotate(-360deg) scale(0); opacity: 1;}
+    100% {transform: translateX(0) rotate(0deg) scale(1);}
+}
+@-moz-keyframes roll {
+    0% {transform: translateX(-200%) rotate(-360deg) scale(0); opacity: 0;}
+    50% {transform: translateX(-200%) rotate(-360deg) scale(0); opacity: 1;}
+    100% {transform: translateX(0) rotate(0deg) scale(1);}
+}
+@-o-keyframes roll {
+    0% {transform: translateX(-200%) rotate(-360deg) scale(0); opacity: 0;}
+    50% {transform: translateX(-200%) rotate(-360deg) scale(0); opacity: 1;}
+    100% {transform: translateX(0) rotate(0deg) scale(1);}
+}
+@keyframes roll {
+    0% {transform: translateX(-200%) rotate(-360deg) scale(0); opacity: 0;}
+    50% {transform: translateX(-200%) rotate(-360deg) scale(0); opacity: 1;}
+    100% {transform: translateX(0) rotate(0deg) scale(1);}
+}
+
+/* IPAD PRO PORTRAIT */
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+
+    header.small {
+        height: 19vh;
+    }
+    .logo img {
+        height: 3vh;
+    }
+    .nav_two {
+        height: 5vh;
+    }
+    #button_menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .nav_two div.menu {
+        display: none;
+    }
+}
+/* IPAD PRO LANDSCAPE */
+
+@media only screen and (max-width: 1366px) and (orientation: landscape) {
+
+    header.small {
+        height: 25vh;
+    }
+    .logo img {
+        height: 6vh;
+    }
+    .nav_two {
+        height: 8vh;
+    }
+}
+@media only screen and (max-width: 768px) {
+  
+    #social_about li {
+        margin-left: 18px;
+    }
+    #social_about li:not(:last-child) {
+        margin-bottom: 5px;
+    }
+    #social_about li a {
+        font-size: 24px;
+    }
+    #button_menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .nav_two div.menu {
+        display: none;
+    }
+}
+
+ /* RESPONSIVE MOBILE (iPhone X) */
+
+ @media only screen and (max-width: 375px) {
+    .routing {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .routing span:nth-child(2) {
+        width: 5px;
+        height: 5px;
+        background-color: black;
+    }
+    .routing span:not(:last-child) {
+        padding-bottom: 5px;
+        display: inline-block;
+    }
+    .routing span:nth-child(4) {
+        display: none;
+    }
+    .about_foto_title h2 {
+        font-size: 30px;
+    }
+    .arrows p {
+        margin: 0px -10px;
+    }
+    #social_about li {
+        margin-left: 0;
+    }
+    #social_about li a {
+        font-size: 18px;
+    }
+    
+ }

@@ -1,0 +1,77 @@
+.info_contacts {
+    width: 44%;
+}
+.contacts_form {
+    width: 56%;
+}
+.contacts {
+    display: flex;
+    margin: 0;
+    padding: 45px 0px;
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 0px 20px;
+}
+form input {
+    padding: 12px;
+    width: 100%;
+    font-size: 14px; 
+}
+.full-width {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+textarea, button {
+    width: 100%;
+}
+button {
+    font-family: JuliusOne;
+    background-color: #2d2d2d;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+
+/* IPAD PRO PORTRAIT */
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+    
+   header.small {
+        height: 20vh;
+    }
+    .contacts {
+        height: 65vh;
+    }
+    footer {
+        height: 15vh;
+    }
+}
+/* IPAD PRO LANDSCAPE */
+
+@media only screen and (max-width: 1366px) and (orientation: landscape) {
+
+    header.small {
+        height: 20vh;
+    }
+    .contacts {
+        height: 65vh;
+    }
+    footer {
+        height: 15vh;
+    }
+}
+@media only screen and (max-width: 768px) {
+
+    header.small {
+        height: 20vh;
+    }
+    .contacts {
+        height: 65vh;
+    }
+    footer {
+        height: 15vh;
+    }
+}
