@@ -1,7 +1,9 @@
 
 import * as button_center from './center_the_button.js';
+import * as fixed_social from './fixed_social_top_position.js';
 
 button_center.set_button();
+fixed_social.fixed_social();
 
 document.addEventListener("DOMContentLoaded", evt => {
   router();
