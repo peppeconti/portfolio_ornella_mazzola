@@ -6,6 +6,7 @@ export const fixed_social = () => {
     const header = document.querySelector('.small');
     let header_height = window.getComputedStyle(header).height;
     social.style.top = `calc(${header_height} + 45px)`;
+
     window.addEventListener('resize', () => {    
         header_height = window.getComputedStyle(header).height;
         social.style.top = `calc(${header_height} + 45px)`;
