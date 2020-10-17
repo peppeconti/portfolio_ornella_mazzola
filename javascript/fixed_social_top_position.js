@@ -1,16 +1,13 @@
 export const fixed_social = () => {
 
-    // calculates (centers) the absolute-position placement of the logo dependig on two chosen elements as a referement
+    // calculates the top position of the fixed social icons dependig on the height of the header plus the padding-top of the section
 
     const social = document.getElementById('social_about');
     const header = document.querySelector('.small');
-    let header_hight = window.getComputedStyle(header).height.slice(0, -2);
-    social.style.top = `calc(${header_hight}px + 45px)`;
-
-
+    let header_height = window.getComputedStyle(header).height;
+    social.style.top = `calc(${header_height} + 45px)`;
     window.addEventListener('resize', () => {    
-        header_hight = window.getComputedStyle(header).height.slice(0, -2);
-        social.style.top = `calc(${header_hight}px + 45px)`;
-       
+        header_height = window.getComputedStyle(header).height;
+        social.style.top = `calc(${header_height} + 45px)`;
     });
 }
