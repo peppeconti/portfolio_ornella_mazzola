@@ -12,7 +12,7 @@ export const html = () => /*html*/ `
         </figure>
     </div>
 </div>
-<div class="about_text fade_in">
+<div class="about_text fade_in anchor">
     <p>Fusce vehicula justo orci, a ultricies eros pretium a. Vivamus orci orci, consectetur ut nulla quis, tincidunt pulvinar arcu. Aenean eu nibh eu ligula blandit ullamcorper. Pellentesque ut metus id nisi volutpat porttitor ut a dui. Mauris vitae vehicula quam. Pellentesque diam augue, consequat eget auctor nec, fringilla malesuada est. Nam bibendum, libero quis egestas suscipit, turpis ipsum vulputate lacus, et rutrum dui nisl sit amet erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     <p>Integer sem felis, lacinia non diam vitae, pretium imperdiet eros. Sed in libero et dui gravida convallis. Proin ut aliquet ligula. Aenean quis fringilla dui, et pellentesque dui. Aenean tristique augue nulla, sed consectetur lorem fringilla nec. Morbi in nulla eget nisl interdum lacinia quis et nulla. In facilisis justo at purus gravida blandit. Ut non molestie odio, ut suscipit ligula. Nam nec nisi tellus. Aenean eget fermentum velit. Aenean euismod at enim vel congue. Sed non augue a ante pharetra gravida.</p>
     <p class="no_margin_bottom">Fusce vehicula justo orci, a ultricies eros pretium a. Vivamus orci orci, consectetur ut nulla quis, tincidunt pulvinar arcu. Aenean eu nibh eu ligula blandit ullamcorper. Pellentesque ut metus id nisi volutpat porttitor ut a dui. Mauris vitae vehicula quam. Pellentesque diam augue, consequat eget auctor nec, fringilla malesuada est. Nam bibendum, libero quis egestas suscipit, turpis ipsum vulputate lacus, et rutrum dui nisl sit amet erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

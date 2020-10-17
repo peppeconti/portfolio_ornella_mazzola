@@ -7,8 +7,12 @@ export const fixed_social = () => {
     let header_height = window.getComputedStyle(header).height;
     social.style.top = `calc(${header_height} + 45px)`;
 
-    window.addEventListener('resize', () => {    
-        header_height = window.getComputedStyle(header).height;
-        social.style.top = `calc(${header_height} + 45px)`;
+    window.addEventListener('resize', () => {  
+        header_height = window.getComputedStyle(header).height;  
+        if (window.scrollY > parseInt(header_height)) {
+            social.style.top = `calc(${nav_height}px + 45px)`;
+        } else {
+            social.style.top = `calc(${header_height}px + 45px)`;
+        }
     });
 }

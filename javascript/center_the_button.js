@@ -14,7 +14,7 @@ export const set_button = () => {
     window.addEventListener('resize', () => {    
         let container_1 = document.querySelector('.nav_two');
         let height = window.getComputedStyle(container_1).height.slice(0,-2);
-        console.log(height);
+        //console.log(height);
         let height_30_percent = (height/100)*30;
         button.style.width = `${height - (height_30_percent/0.7)}px`;
         button.style.height = `${height - (height_30_percent*2)}px`;
