@@ -52,7 +52,7 @@ body#home {
     left: calc(50% - 75px);
     width: 150px;
     height: 150px;
-    animation: rotate 2.5s infinite linear;
+    animation: rotate 3s infinite linear;
     z-index: 300;
 }
 .preloader img {
@@ -844,7 +844,7 @@ ul.social_footer {
         padding: 0px 2px;
     }
   }
-  @media only screen and (max-width: 812px) and (orientaion: landscape) { 
+  @media only screen and (max-width: 812px) and (orientation: landscape) { 
 
     section {
         padding-left: 10%;

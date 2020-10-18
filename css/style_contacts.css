@@ -24,7 +24,7 @@ form input {
 textarea, button {
     width: 100%;
 }
-button {
+input[type=submit] {
     font-family: JuliusOne;
     background-color: #2d2d2d;
     color: white;
