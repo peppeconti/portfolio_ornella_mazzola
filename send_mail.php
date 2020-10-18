@@ -35,4 +35,3 @@ EOD;
 //	mail($to, $sub, $body, $headers);
 }
 ?>
-<h2>Ciao</h2>
