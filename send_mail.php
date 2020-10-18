@@ -4,7 +4,6 @@ $name = trim($_POST['name']);
 $email = trim($_POST['email']);
 $subject = trim($_POST['subject']);
 $message = trim($_POST['message']);
-$phone = trim($_POST['phone']);
 ​
 ​
 if( isset($name) && isset($email) ) {
@@ -16,14 +15,13 @@ if( isset($name) && isset($email) ) {
 	}
 	*/
 	// Email will be send
-	$to = "g.conti1980@gmai.com"; // Change with your email address
-	$sub = "infos"; // You can define email subject
+	$to = "peppeconti@hotmail.com"; // Change with your email address
+	$sub = "info_Qr bike"; // You can define email subject
 	// HTML Elements for Email Body
 ​
 	$body = <<<EOD
 	<strong>Name:</strong> $name <br>
-    <strong>Email:</strong> $email <br>
-    <strong>Phone:</strong> $phone<br> 
+	<strong>Email:</strong> $email <br> 
 	<strong>Message:</strong> $message<br>
 EOD;
 //Must end on first column
@@ -37,3 +35,4 @@ EOD;
 //	mail($to, $sub, $body, $headers);
 }
 ?>
+<h2>Ciao</h2>
