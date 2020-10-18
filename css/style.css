@@ -616,13 +616,17 @@ ul.social_footer {
     z-index: 99;
     display: none;
 }
-#button_menu span {
+#button_menu img {
+    width: 100%;
+    height: 100%;
+} 
+/*#button_menu span {
     position: static;
     display: block;
     height: 6px;
     background-color: white;
     border-radius: 80px;
-}
+}*/
 /*#button_menu :nth-child(1) {
     margin-bottom: 10px;
 }

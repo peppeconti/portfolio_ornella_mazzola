@@ -3,11 +3,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // place each node of the 'ul' inside the grid relative to the row-structure  
     const button = document.getElementById('button_menu');
+    const img_button = button.firstElementChild;
     const container = document.getElementById('hamb_menu');
     let list_els = document.querySelector('#hamb_menu ul').children;
     let array_from_ul = Array.from(list_els);
     // console.log(array_from_ul);
     // console.log(button);
+    console.log(img_button)
     let grid_start = 1;
     let grid_end = 2;
     array_from_ul.forEach(e => {
@@ -27,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // console.log(width);
         if (width > 1023) {
             container.style.zIndex = '-2';
+            img_button.src = 'images/bars-solid.svg';
             array_from_ul.forEach(e => {
                 e.style.transition = `0s`;
                 e.classList.remove('goes_in')
@@ -39,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const toggle_menu = () => {
         if (container.style.zIndex !== '10') {
             button.removeEventListener('click', toggle_menu);
+            img_button.src = 'images/times-solid.svg';
             container.classList.add('goes_in');
             container.style.zIndex = '10';
             button.style.position = 'fixed';
@@ -55,6 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         else if (container.style.zIndex === '10') {
             button.removeEventListener('click', toggle_menu);
             button.style.position = 'absolute';
+            img_button.src = 'images/bars-solid.svg';
             let delay = 0.1;
             array_from_ul.forEach(e => {
                 e.style.transition = `${delay}s`;
