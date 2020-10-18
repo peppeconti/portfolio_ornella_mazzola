@@ -1,13 +1,10 @@
-.info_contacts {
-    width: 44%;
-}
+section.contact {
+    padding: 45px 15%;
+} 
 .contacts_form {
-    width: 56%;
-}
-.contacts {
-    display: flex;
-    margin: 0;
-    padding: 45px 0px;
+    background-color: #ECECEC;
+    padding: 20px;
+    margin-top: 45px;
 }
 form {
     display: grid;
@@ -16,7 +13,7 @@ form {
     padding: 0px 20px;
 }
 form input {
-    padding: 12px;
+    padding: 20px;
     width: 100%;
     font-size: 14px; 
 }
@@ -39,39 +36,16 @@ button {
 
 @media only screen and (max-width: 1024px) and (orientation: portrait) {
     
-   header.small {
-        height: 20vh;
-    }
-    .contacts {
-        height: 65vh;
-    }
-    footer {
-        height: 15vh;
-    }
+   
 }
 /* IPAD PRO LANDSCAPE */
 
 @media only screen and (max-width: 1366px) and (orientation: landscape) {
 
-    header.small {
-        height: 20vh;
-    }
-    .contacts {
-        height: 65vh;
-    }
-    footer {
-        height: 15vh;
-    }
+   
 }
 @media only screen and (max-width: 768px) {
 
-    header.small {
-        height: 20vh;
-    }
-    .contacts {
-        height: 65vh;
-    }
-    footer {
-        height: 15vh;
-    }
+ 
+    
 }
