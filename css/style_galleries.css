@@ -189,8 +189,7 @@ body#galleries {
 .carousell:hover .commands {
     opacity: 0.4;
 }
-
-@media only screen and (max-width: 812px) {
+@media only screen and (max-width: 812px) and (orientation:landscape) {
     .gallery_container {
         grid-template-columns: 1fr 1fr;
     }
@@ -198,7 +197,6 @@ body#galleries {
         width: 500px;
     }
 }    
-
 /* RESPONSIVE MOBILE (iPhone X) */
 
 @media only screen and (max-width: 375px) {

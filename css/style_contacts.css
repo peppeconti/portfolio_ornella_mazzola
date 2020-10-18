@@ -35,17 +35,34 @@ button {
 /* IPAD PRO PORTRAIT */
 
 @media only screen and (max-width: 1024px) and (orientation: portrait) {
-    
-   
+    section.contact {
+        padding: 45px 5%;
+    } 
 }
 /* IPAD PRO LANDSCAPE */
 
 @media only screen and (max-width: 1366px) and (orientation: landscape) {
-
-   
+    section.contact {
+        padding: 45px 5%;
+    } 
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 812px) and (orientation:landscape) {
 
- 
-    
+}    
+/* RESPONSIVE MOBILE (iPhone X) */
+
+@media only screen and (max-width: 375px) {
+    form input {
+        padding: 5px;
+    }
+    section.contact {
+        padding: 45px 0%;
+    }
+    .contacts_form {
+        padding: 20px 5px;
+    } 
+    figure img {
+        width: 80%;
+        margin: 0px auto;
+    }
 }

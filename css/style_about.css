@@ -252,7 +252,7 @@ figure.round {
 
  /* RESPONSIVE MOBILE (iPhone X) */
 
-@media only screen and (max-width: 812px) {
+@media only screen and (max-width: 812px) and (orientation: landscape) {
     #social_about li {
         margin-left: 20px;
         padding: 0;

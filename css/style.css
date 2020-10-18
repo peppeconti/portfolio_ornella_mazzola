@@ -844,7 +844,7 @@ ul.social_footer {
         padding: 0px 2px;
     }
   }
-  @media only screen and (max-width: 812px) { 
+  @media only screen and (max-width: 812px) and (orientaion: landscape) { 
 
     section {
         padding-left: 10%;
