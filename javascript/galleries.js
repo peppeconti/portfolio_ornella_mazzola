@@ -13,22 +13,6 @@ document.addEventListener("DOMContentLoaded", evt => {
   })
 });
 
-
-const control_index = (img, length) => {
-  if (img === 0) {
-    let chevron_left = document.querySelector('.fa-chevron-left');
-    chevron_left.style.visibility = 'hidden';
-  } else if (img === (length - 1)) {
-    let chevron_right = document.querySelector('.fa-chevron-right');
-    chevron_right.style.visibility = 'hidden';
-  } else {
-    let chevron_left = document.querySelector('.fa-chevron-left');
-    let chevron_right = document.querySelector('.fa-chevron-right');
-    chevron_right.style.visibility = 'visible';
-    chevron_left.style.visibility = 'visible';
-  }
-}
-
 const router = () => {
 
 const hash_check = window.location.hash.substring(2);
@@ -209,6 +193,17 @@ const showLightBox = (evt) => {
 
   // shows the clicked photo by moving the container at the right longitude
 
+  const control_index = (img, length) => {
+    if (img === 0) {
+      chevron_left.style.visibility = 'hidden';
+    } else if (img === (length - 1)) {
+      chevron_right.style.visibility = 'hidden';
+    } else {
+      chevron_right.style.visibility = 'visible';
+      chevron_left.style.visibility = 'visible';
+    }
+  }
+  
   control_index(index_image, string_from_photos_list.length);
 
   img_container.style.transform = `translateX(-${img_width*index_image}px)`;
@@ -276,7 +271,6 @@ const showLightBox = (evt) => {
      control_index(index_image, string_from_photos_list.length);
      } else {
        img_container.style.transform = `translateX(0px)`; index_image = 0;
-       let chevron_right = document.querySelector('.fa-chevron-right');
        chevron_right.style.visibility = 'visible';
        control_index(index_image, string_from_photos_list.length);
      }
