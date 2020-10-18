@@ -751,8 +751,8 @@ ul.social_footer {
   @media only screen and (max-width: 375px) {
 
     section {
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 11%;
+        padding-right: 11%;
     }
     .title {
         padding: 1px;

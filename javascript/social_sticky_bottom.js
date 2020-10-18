@@ -20,6 +20,8 @@
         }
     })
     window.addEventListener('resize', () => {
+        header_height = window.getComputedStyle(header).height.slice(0, -2);
+        nav_height = window.getComputedStyle(nav_bar).height.slice(0, -2);
         if (window.scrollY > parseInt(header_height)) {
             social.style.top = `calc(${nav_height}px + 45px)`;
         } else {

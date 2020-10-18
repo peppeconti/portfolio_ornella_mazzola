@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let array_from_ul = Array.from(list_els);
     // console.log(array_from_ul);
     // console.log(button);
-    console.log(img_button)
+    //console.log(img_button)
     let grid_start = 1;
     let grid_end = 2;
     array_from_ul.forEach(e => {

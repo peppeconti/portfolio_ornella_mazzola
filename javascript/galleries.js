@@ -13,6 +13,22 @@ document.addEventListener("DOMContentLoaded", evt => {
   })
 });
 
+
+const control_index = (img, length) => {
+  if (img === 0) {
+    let chevron_left = document.querySelector('.fa-chevron-left');
+    chevron_left.style.visibility = 'hidden';
+  } else if (img === (length - 1)) {
+    let chevron_right = document.querySelector('.fa-chevron-right');
+    chevron_right.style.visibility = 'hidden';
+  } else {
+    let chevron_left = document.querySelector('.fa-chevron-left');
+    let chevron_right = document.querySelector('.fa-chevron-right');
+    chevron_right.style.visibility = 'visible';
+    chevron_left.style.visibility = 'visible';
+  }
+}
+
 const router = () => {
 
 const hash_check = window.location.hash.substring(2);
@@ -95,9 +111,9 @@ const list_social = document.getElementById('social_about');
           .then(data => {
 
             let galleries = data.results;
-            console.log(galleries);
+            //console.log(galleries);
             let galleries_list = Object.keys(galleries);
-            console.log(galleries_list);
+            //console.log(galleries_list);
                   if (galleries_list.includes(hash_check)) {
 
                     let main_title = document.createElement('h2');
@@ -187,14 +203,16 @@ const showLightBox = (evt) => {
   backdrop.appendChild(carousell);
   body_galleries.appendChild(backdrop);
   let image_in_container = document.querySelector('.img_container');
-  console.log(image_in_container);
+  //console.log(image_in_container);
   let img_width = window.getComputedStyle(image_in_container).width.slice(0, -2);
-  console.log(img_width);
+  //console.log(img_width);
 
   // shows the clicked photo by moving the container at the right longitude
 
-  img_container.style.transform = `translateX(-${img_width*index_image}px)`;
+  control_index(index_image, string_from_photos_list.length);
 
+  img_container.style.transform = `translateX(-${img_width*index_image}px)`;
+  
   // remove the LightBox on hashchange
 
   window.addEventListener('hashchange', () => {
@@ -229,6 +247,7 @@ const showLightBox = (evt) => {
     stopIntervall();
     if (index_image + 1 < string_from_photos_list.length) {
       index_image++;
+      control_index(index_image, string_from_photos_list.length);
       img_container.style.transition = '1.5s';
       img_container.style.transform = `translateX(-${img_width*index_image}px)`;
       stop.classList.remove('fa-pause');
@@ -239,7 +258,8 @@ const showLightBox = (evt) => {
   chevron_left.addEventListener('click', () => {
     stopIntervall();
     if (index_image - 1 >= 0) {
-      index_image--; 
+      index_image--;
+      control_index(index_image, string_from_photos_list.length); 
       img_container.style.transition = '1.5s';
       img_container.style.transform = `translateX(-${img_width*index_image}px)`;
       stop.classList.remove('fa-pause');
@@ -252,9 +272,13 @@ const showLightBox = (evt) => {
  
   const goAhaed = () => {
     if (index_image + 1 < string_from_photos_list.length) {
-     index_image++; img_container.style.transition = '1.5s'; img_container.style.transform = `translateX(-${img_width*index_image}px)`
+     index_image++; img_container.style.transition = '1.5s'; img_container.style.transform = `translateX(-${img_width*index_image}px)`;
+     control_index(index_image, string_from_photos_list.length);
      } else {
        img_container.style.transform = `translateX(0px)`; index_image = 0;
+       let chevron_right = document.querySelector('.fa-chevron-right');
+       chevron_right.style.visibility = 'visible';
+       control_index(index_image, string_from_photos_list.length);
      }
     }
 
