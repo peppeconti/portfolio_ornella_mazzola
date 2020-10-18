@@ -252,6 +252,13 @@ figure.round {
 
  /* RESPONSIVE MOBILE (iPhone X) */
 
+@media only screen and (max-width: 812px) {
+    #social_about li {
+        margin-left: 20px;
+        padding: 0;
+    }
+ }
+
  @media only screen and (max-width: 375px) {
     .routing {
         flex-wrap: wrap;
@@ -276,17 +283,10 @@ figure.round {
         margin: 0px -10px;
     }
     #social_about li {
-        margin-left: 0;
+        margin-left: 10px;
     }
     #social_about li a {
         font-size: 18px;
     }
     
- }
-
- @media only screen and (max-width: 812px) {
-    #social_about li {
-        margin-left: 20px;
-        padding: 0;
-    }
  }

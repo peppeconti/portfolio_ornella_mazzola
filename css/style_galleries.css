@@ -190,6 +190,15 @@ body#galleries {
     opacity: 0.4;
 }
 
+@media only screen and (max-width: 812px) {
+    .gallery_container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .carousell {
+        width: 500px;
+    }
+}    
+
 /* RESPONSIVE MOBILE (iPhone X) */
 
 @media only screen and (max-width: 375px) {
@@ -202,11 +211,3 @@ body#galleries {
     }
 
 }
-@media only screen and (max-width: 812px) {
-    .gallery_container {
-        grid-template-columns: 1fr 1fr;
-    }
-    .carousell {
-        width: 500px;
-    }
-}    
