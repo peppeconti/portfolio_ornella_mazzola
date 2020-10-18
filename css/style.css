@@ -844,3 +844,48 @@ ul.social_footer {
         padding: 0px 2px;
     }
   }
+  @media only screen and (max-width: 812px) { 
+
+    section {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .title {
+        padding: 1px;
+    }
+    .title h1 {
+        font-size: 35px;
+        padding: 15px;
+    }
+    .title h2 {
+        font-size: 30px;
+    }
+    title h2 img {
+        width: 25px;
+    }
+    .logo_desktop {
+        width: 50px;
+        height: 50px;
+        top: 15px;
+    }
+    ul.nav li {
+        font-size: 80%;
+        padding: 8px;
+    }
+    .fab, .fas {
+        font-size: 24px;
+    }
+    li p {
+        height: 5px;
+        width: 5px;
+    }
+    .text_about h2 span {
+        font-size: 30px;
+        padding: 22px;
+    }
+    .text_about div {
+        font-size: 14px;
+        padding: 22px;
+    }
+
+  }
