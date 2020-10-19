@@ -6,7 +6,7 @@ export const set_logo = () => {
     let button = document.getElementById('button_menu');
     let container = document.querySelector('.side_nav_bar');
     let height = window.getComputedStyle(container).height.slice(0,-2);
-    console.log(height);
+    //console.log(height);
     let height_30_percent = (height/100)*30;
     logo.style.width = `${height - height_30_percent}px`;
     logo.style.height = `${height - height_30_percent}px`;
@@ -21,7 +21,7 @@ export const set_logo = () => {
         let logo = document.querySelector('.logo_responsive');
         let container_1 = document.querySelector('.side_nav_bar');
         let height = window.getComputedStyle(container_1).height.slice(0,-2);
-        console.log(height);
+        //console.log(height);
         let height_30_percent = (height/100)*30;
         logo.style.width = `${height - height_30_percent}px`;
         logo.style.height = `${height - height_30_percent}px`;
