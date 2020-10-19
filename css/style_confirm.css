@@ -1,0 +1,45 @@
+/* Fonts */
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Light.ttf);
+  }
+@font-face {
+    font-family: JuliusOne;
+    src: url(../fonts/JuliusSansOne-Regular.ttf);
+  }
+@font-face {
+    font-family: Dancing;
+    src: url(../fonts/DancingScript-VariableFont_wght.ttf);
+  }  
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.confirm_message {
+    height: 10vh;
+    width: 10vh;
+    background-color: #2d2d2d;
+    color: whitesmoke;
+    font-size: Dancing;
+    padding: 10px; 
+}
+.back {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.back p {
+    padding: 5px;
+    background-color: grey;
+}

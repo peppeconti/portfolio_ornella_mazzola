@@ -26,7 +26,13 @@ if(isset($_POST['submit'])){
 		<link rel="stylesheet" href="css/style_confirms.css">
 	</head>
 	<body>
-		
+		<div class="confirm_message">
+		<h2>Thanks, your email was sent correctly!</h2>
+		</div>
+		<div class="back">
+		<p><a href="index.html">Back to Home</a><p/>
+		<p><a href="contacts.html">Back to Contacts</a><p/>
+		</div>
 	</body>
 	</html>';
 
