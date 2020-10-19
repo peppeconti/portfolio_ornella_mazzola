@@ -353,7 +353,7 @@ article.preview_about figure {
 }
 .text_about span {
     position: relative;
-    padding: 45px;
+    padding: 35px;
     display: inline-block;
 }
 .text_about span:after {
@@ -367,7 +367,7 @@ article.preview_about figure {
 }
 .text_about div {
     font-size: 15px;
-    padding: 45px;
+    padding: 40px;
     color: white;
 }
 /* Section Galleries */
@@ -748,7 +748,7 @@ ul.social_footer {
 
   /* RESPONSIVE MOBILE (iPhone X) */
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 672px) {
 
     section {
         padding-left: 11%;
