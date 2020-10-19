@@ -23,7 +23,7 @@ if(isset($_POST['submit'])){
 		<!-- carico il file per le icone Fontawesome -->
 		<link rel="stylesheet" href="fontawesome/css/all.min.css">
 		<link rel="icon" href="images/favicon.png" type="image/png">
-		<link rel="stylesheet" href="css/style_confirms.css">
+		<link rel="stylesheet" href="css/style_confirm.css">
 	</head>
 	<body>
 		<div class="confirm_message">
