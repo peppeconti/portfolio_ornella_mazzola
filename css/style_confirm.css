@@ -27,12 +27,13 @@ body {
     justify-content: center;
 }
 .confirm_message {
-    height: 10vh;
-    width: 10vh;
+    height: 30vh;
+    width: 30vh;
     background-color: #2d2d2d;
     color: whitesmoke;
-    font-size: Dancing;
-    padding: 10px; 
+    font-family: Dancing;
+    padding: 10px;
+    text-align: center; 
 }
 .back {
     display: flex;
@@ -42,4 +43,8 @@ body {
 .back p {
     padding: 5px;
     background-color: grey;
+}
+.back p a {
+    color: white;
+    text-decoration: none;
 }
