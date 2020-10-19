@@ -7,35 +7,35 @@ if(isset($_POST['submit'])){
 	$email = $_POST['email'];
 	$phone = $_POST['phone'];
 	$html = '<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<!-- viewport controllo zoom bloccato-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-		<!-- X-UA er compatibilità di alcuni aspetti di Internet Explorer -->
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<!-- autore del sito -->
-		<meta name="author" content="Giuseppe Conti">
-		<!-- meta description -->
-		<meta name="description" content="Portfolio fotografico di Ornella Mazzola">    
-		<!-- meta keywords -->
-		<meta name="keywords" content="Ornella Mazzola, fotografa, fotografia, Palermo">
-		<title>Mazzola Photography - Confirm</title>
-		<!-- carico il file per le icone Fontawesome -->
-		<link rel="stylesheet" href="fontawesome/css/all.min.css">
-		<link rel="icon" href="images/favicon.png" type="image/png">
-		<link rel="stylesheet" href="css/style_confirm.css">
-	</head>
-	<body>
+		<head>
+			<meta charset="UTF-8">
+			<!-- viewport controllo zoom bloccato-->
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+			<!-- X-UA er compatibilità di alcuni aspetti di Internet Explorer -->
+			<meta http-equiv="X-UA-Compatible" content="ie=edge">
+			<!-- autore del sito -->
+			<meta name="author" content="Giuseppe Conti">
+			<!-- meta description -->
+			<meta name="description" content="Portfolio fotografico di Ornella Mazzola">    
+			<!-- meta keywords -->
+			<meta name="keywords" content="Ornella Mazzola, fotografa, fotografia, Palermo">
+			<title>Mazzola Photography - Confirm</title>
+			<!-- carico il file per le icone Fontawesome -->
+			<link rel="stylesheet" href="fontawesome/css/all.min.css">
+			<link rel="icon" href="images/favicon.png" type="image/png">
+			<link rel="stylesheet" href="css/style_confirm.css">
+		</head>
+		<body>
 		<div class="overlay"></div>
 		<div class="overlay_2"></div>
 		<div class="confirm_message">
 			<h2>Thanks, your email was sent correctly!</h2>
 		</div>
-		<div class="back">
-            <a href="index.html"><h3>Back to Home</h3></a>
-		    <a href="contacts.html"><h3>Back to Contacts</h3></a>
-		</div>
-	</body>
+			<div class="back">
+				<a href="index.html"><button>Home</button></a>
+				<a href="contacts.html"><button>Contacts</button></a>
+			</div>
+		</body>
 	</html>';
 
 	$body = <<<EOD

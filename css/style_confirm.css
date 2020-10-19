@@ -43,49 +43,47 @@ body {
     width: 100%;
     height: 100%;
     z-index: -3;
-    background: url(/images/background.jpg) no-repeat center center;
+    background: url(background.jpg) no-repeat center center;
     filter: blur(3px);
 }
 .confirm_message {
-    height: 40vh;
-    width: 40vh;
-    background-color: #2d2d2d;
-    color: whitesmoke;
+    color: #2d2d2d;
     font-family: Dancing;
     padding: 15px;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1;
+    width: 100%;
 }
 .confirm_message h2 {
-    font-size: 230%;
+    font-size: 50px;
     text-align: center;
 }
 .back {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 25px;
-    width: 30%;
+    width: 100%;
 }
-.back h3 {
-    padding: 5px;
+.back button {
+    padding: 10px;
     background-color: #494949;
-    height: 20vh;
-    width: 20vh;
-    border-radius: 50%;
     font-family: Dancing;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    color: white;
+    outline: none;
+    margin: 20px;
+    width: 150px;
 }
-.back h3:hover {
+.back button:hover {
     opacity: 0.8;
     animation: bounce 0.8s 1 ease;
 }
 .back a {
-    color: white;
+
     text-decoration: none;
     font-size: 150%;
     text-align: center;
@@ -110,3 +108,12 @@ body {
     50% {transform: translateY(-20px);}
     100% {transform: translateY(0px);}
   }
+@media only screen and (max-width: 450px) {
+    .back {
+        flex-direction: column;
+        align-items: center;
+    }
+    .confirm_message h2 {
+        font-size: 46px;
+    }
+}
