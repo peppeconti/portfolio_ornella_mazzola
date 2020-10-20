@@ -1,9 +1,6 @@
 body#galleries {
     position: relative
 }
-.background_about {
-    background: url(/images/banner_about.jpg) no-repeat center center;
-}
 .galleries_title {
     text-align: center;
     font-size: 60px;
