@@ -1,10 +1,17 @@
 section.contact {
     padding: 45px 15%;
 } 
+main:before {
+    background-color: #ECECEC;
+}
 .contacts_form {
     background-color: #ECECEC;
     padding: 20px;
     margin-top: 45px;
+}
+figure img {
+    width: 65%;
+    margin: auto auto;
 }
 form {
     display: grid;
@@ -12,10 +19,13 @@ form {
     grid-gap: 20px;
     padding: 0px 20px;
 }
-form input {
+form input, textarea {
     padding: 20px;
     width: 100%;
-    font-size: 14px; 
+    font-size: 14px;
+    outline: none;
+    font-family: Montserrat;
+    color: black;
 }
 .full-width {
     grid-column-start: 1;
@@ -23,6 +33,7 @@ form input {
 }
 textarea, button {
     width: 100%;
+    outline: none;
 }
 input[type=submit] {
     font-family: JuliusOne;
@@ -30,6 +41,13 @@ input[type=submit] {
     color: white;
     font-size: 20px;
     border: none;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    opacity: 0.9;
+}
+form input:focus, textarea:focus {
+    border-bottom: 1px solid #2d2d2d;
 }
 
 /* IPAD PRO PORTRAIT */
