@@ -149,7 +149,7 @@ const list_social = document.getElementById('social_about');
 
 // set some usefull global variables
 
-let speed = 6000;
+let speed = 2000;
 let auto_move = true;
 
 const showLightBox = (evt) => {
